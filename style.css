@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
+
+body {
+  background: #000;
+  font-family: 'Sen';
+  margin-bottom: 200px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #8e72d0;
+  position: relative;
+  font-size: 18px;
+  perspective: 1000px;
+  z-index: 100;
+}
+
+.dropdown:hover {
+  background: #5f3eab;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown_menu li {
+  display: block;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  perspective: 1000px;
+  z-index: -1;
+}
+
+.dropdown_menu li {
+  display: none;
+  color: #fff;
+  background-color: #8e72d0;
+  padding: 10px 20px;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.dropdown_menu li:hover {
+  background-color: #6f47cc;
+}
+
+.drop .option1 {
+  transform-origin: top center;
+  animation: rotateZ 300ms 60ms ease-in-out forwards;
+}
+
+.drop .option2 {
+  transform-origin: top center;
+  animation: rotateZ 300ms 120ms ease-in-out forwards;
+}
+
+.drop .option3 {
+  transform-origin: top center;
+  animation: rotateZ 300ms 180ms ease-in-out forwards;
+}
+
+.drop .option4 {
+  transform-origin: top center;
+  animation: rotateZ 300ms 240ms ease-in-out forwards;
+}
+
+.drop .option5 {
+  transform-origin: top center;
+  animation: rotateZ 300ms 300ms ease-in-out forwards;
+}
+
+@-moz-keyframes rotateZ {
+  0% {
+    opacity: 0;
+    transform: translateZ(290px);
+  }
+
+  80% {
+    transform: translateZ(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@-webkit-keyframes rotateZ {
+  0% {
+    opacity: 0;
+    transform: translateZ(290px);
+  }
+
+  80% {
+    transform: translateZ(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@-o-keyframes rotateZ {
+  0% {
+    opacity: 0;
+    transform: translateZ(290px);
+  }
+
+  80% {
+    transform: translateZ(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes rotateZ {
+  0% {
+    opacity: 0;
+    transform: translateZ(290px);
+  }
+
+  80% {
+    transform: translateZ(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
